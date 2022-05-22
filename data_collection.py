@@ -6,9 +6,9 @@ Created on Thu May 20 12:54:07 2022
 Function:
 Collect Jobs from "fr.Indeed.com" for insights with location, salary...
 """
-import indeed_scraper 
-import pandas as pd 
+import indeed_scraper as sp 
+#import pandas as pd 
 
-df = indeed_scraper.get_jobs('data engineer',500, False, 5)
+df = sp.get_jobs('data%20engineer',500, True, 5)
 
 df.to_csv('glassdoor_jobs.csv', index = False)
